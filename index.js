@@ -42,6 +42,6 @@ server(
         });
     }),
   ],
-);
-
-console.log('running on http://localhost:3000/');
+).then((ctx) => {
+  console.log(`Server launched on http://localhost:${ctx.options.port}/`);
+});
