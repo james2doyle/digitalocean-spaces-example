@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Digital Ocean Spaces</title>
+  <link rel="stylesheet" href="/css/primer.css">
+</head>
+<body>
+  <div class="container">
+    <div class="columns">
+      <div class="three-fourths column centered">
+        <div class="blankslate my-4">
+          <h3>Testing Digital Ocean Spaces</h3>
+          <p>Files upoaded here will be sent directly to the space.</p>
+        </div>
+      </div>
+      <div class="three-fourths column centered">
+        <form id="form" action="/upload" method="post" accept-charset="utf-8" enctype="multipart/form-data">
+          <p class="centered" id="progress">🕓 waiting for upload</p>
+          <div class="input-group">
+            <label>Upload A File:</label>
+            <input id="files" type="file" name="file" class="form-control" accept=".jpg,.jpeg" placeholder="Upload A File">
+            <span class="input-group-button">
+              <button type="submit" class="btn btn-primary">Go</button>
+            </span>
+          </div>
+        </form>
+      </div>
+      <div class="three-fourths column centered">
+        <div class="markdown-body mt-4">
+          <figure class="highlight">
+            <pre>output...</pre>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="/js/index.js" type="text/javascript" charset="utf-8"></script>
+</body>
+</html>
